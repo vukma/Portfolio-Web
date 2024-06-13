@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg shadow border m-1" style="width: 60%; height: 600px;">
+            <div class="text-center">
+                <h2>About me</h2>
+                <img src="../../assets/Me.jpg" alt="profile picture" width="230" height="280" class="rounded-circle">
+                <p>I started my career as a fitness coach, where I honed my skills in discipline, perseverance, and personalized coaching. Driven by a passion for continuous learning, I transitioned into the tech industry and have since been immersed in learning Frontend Techologies.
+                    My background in fitness coaching gives me a unique approach to problem-solving and client interaction. I aim to combine my dedication to helping others with my technical skills to create innovative solutions.
+                    I'm excited to take on new challenges and connect with like-minded professionals. Let's build something amazing together!
+                    Thanks for visiting!
+                    Best,
+                    Miroslav Vukmirov.</p>
+            </div>
+        </div>
+
+        <div class="col-lg shadow border m-1">
+            <div class="text-center">
+                <h2>Featured Project</h2>
+                <h4>{{featuredProject.name}}</h4>
+            </div>
+
+            <carousel>
+                <div *ngFor="let picture of featuredProject.pictures">
+                    <slide><img src={{picture}} alt="slide" style="display: block; width:80%;"></slide>
+                </div>
+            </carousel>
+            <p class="mt-2">{{featuredProject.summary}}</p>
+            <p>Visit the portfolio section to learn more.</p>
+        </div>
+    </div>
+</div>
