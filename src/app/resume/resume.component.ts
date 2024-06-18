@@ -21,8 +21,8 @@ export class ResumeComponent {
   DownloadFile() {
     const link = this.renderer.createElement('a');
     link.setAttribute('target','_blank');
-    link.setAttribute('href', '../../assets/Miroslav Vukmirov.pdf');
-    link.setAttribute('download','Miroslav Vukmirov.pdf');
+    link.setAttribute('href', '../../assets/Miroslav vukmirov-1.pdf');
+    link.setAttribute('download','Miroslav vukmirov-1.pdf');
     link.click();
     link.remove();
   
